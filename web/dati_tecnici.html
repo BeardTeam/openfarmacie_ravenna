@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- 
+/*
+* dati_tecnici.html is part of OpenFarmacie@Ravenna - http://www.openfarmacieravenna.url.ph
+* Released under GPLv3, available at http://www.gnu.org/licenses
+* Copyleft 2014, Antonio Notarangelo <progsoul91@gmail.com> - http://plus.google.com/+AntonioNotarangelo
+* 
+* For any information, send a email to:
+* ° Antonio Notarangelo - antonio.notarangelo@outlook.com / progsoul91@gmail.com
+* ° Massimiliano Leone - maximilianus@gmail.com
+*
+*
+*/
+-->
+<html lang='en'>
+  <head>
+    <title>OpenFarmacie@Ravenna - Dati Tecnici</title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content='' name='description' />
+    <meta content='' name='author' />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection">
+	<link href="styles/glDatePicker.default.css" rel="stylesheet" type="text/css">
+	
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/date.format.js"></script>
+	<script type="text/javascript"> 
+		function showHide(btnName,divID) {
+			if($('#' + btnName).text() === '+')
+				$('#' + btnName).text('-');
+			else
+				$('#' + btnName).text('+');
+			$('#' + divID).slideToggle();
+		}
+	</script>
+	
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div id="error" style="background:yellow; color:red; "></div>
+    <div class='navbar navbar-default navbar-static-top'>
+      <div class='container'>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class='navbar-brand' href='index.html'>OpenFarmacie@Ravenna - Farmacie di Ravenna e dintorni</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class='active'><a href="dati_tecnici.html">Dati tecnici</a></li>
+            <li class='active'><a href="about.html">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class='container'>
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class='well'>
+					<h4>Attività oraria settimanale - Totale per farmacia <button id="btn1stFrame" onclick="showHide('btn1stFrame','div1stFrame')">+</button></h4>
+					<div id="div1stFrame" style="DISPLAY: none">
+						<iframe width="500" height="300" scrolling="no" frameborder="no" 
+							src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=true&amp;gd=false&amp;sdb=1&amp;rmax=100000&amp;q=select+col191%2C+col212%2C+col212+from+1HHfTCUrYsZPIIOguvWEBkeiZWn4bdp9lHXo7XCrW&amp;qrs=+where+col191+%3E%3D+&amp;qre=+and+col191+%3C%3D+&amp;qe=&amp;uiversion=2&amp;state=%7B%22ps%22%3A%221_3_-3j_i_k_86_n_6_4w_-1j_h_y_-i_g_u_-1a_7_-7f_-1y_8_-6s_-1t_1_-7v_1r_0_-8h_1s_f_46_-1b_5_5l_-1s_d_30_1t_e_3l_1t_9_-4h_k_a_-3v_-e_4_-3s_1f_2_-2r_10_i_-2t_-4_b_-8x_-b_c_-91_-v_m_7r_-3_l_7h_14_j_8m_1d_n_8u_5_%22%2C%22cx%22%3A107.82180198985934%2C%22cy%22%3A1.0134940925045832%2C%22sw%22%3A782.1446112682257%2C%22sh%22%3A282.77000193668715%2C%22z%22%3A0.7498730715808214%7D&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=500&amp;height=300">
+						</iframe>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-6'>
+				<div class='well'>
+					<h4>Attività oraria settimanale - Totale per farmacia <button id="btn2ndFrame" onclick="showHide('btn2ndFrame','div2ndFrame')">+</button></h4>
+					<div id="div2ndFrame" style="DISPLAY: none">
+						<iframe width="500" height="300" scrolling="no" frameborder="no" 
+							src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col191%2C+col212+from+1HHfTCUrYsZPIIOguvWEBkeiZWn4bdp9lHXo7XCrW+order+by+col191+asc+limit+100&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3Anull%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22logScale%22%3Afalse%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%7D&amp;gco_legend=none&amp;gco_domainAxis=%7B%22direction%22%3A1%7D&amp;gco_title=&amp;gco_series=%7B%220%22%3A%7B%22targetAxisIndex%22%3A0%7D%7D&amp;width=500&amp;height=300">
+						</iframe>
+					</div>
+				</div>
+			<p class='pull-right'>
+				
+			</p>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class='well'>
+					<h4>Attività oraria settimanale - Totale per farmacia, in percentuale <button id="btn3rdFrame" onclick="showHide('btn3rdFrame','div3rdFrame')">+</button></h4>
+					<div id="div3rdFrame" style="DISPLAY: none">
+						<iframe width="500" height="300" scrolling="no" frameborder="no" 
+							src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col191%2C+col212+from+1HHfTCUrYsZPIIOguvWEBkeiZWn4bdp9lHXo7XCrW+order+by+col212+desc+limit+100&amp;viz=GVIZ&amp;t=PIE&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_is3D=false&amp;gco_pieHole=0.5&amp;gco_booleanRole=certainty&amp;gco_colors=%5B%22%233366CC%22%2C%22%23DC3912%22%2C%22%23FF9900%22%2C%22%23109618%22%2C%22%23990099%22%2C%22%230099C6%22%2C%22%23DD4477%22%2C%22%2366AA00%22%2C%22%23B82E2E%22%2C%22%23316395%22%2C%22%23994499%22%2C%22%2322AA99%22%2C%22%23AAAA11%22%2C%22%236633CC%22%2C%22%23E67300%22%2C%22%238B0707%22%2C%22%23651067%22%2C%22%23329262%22%2C%22%235574A6%22%2C%22%233B3EAC%22%2C%22%23B77322%22%2C%22%2316D620%22%2C%22%23B91383%22%2C%22%23F4359E%22%2C%22%239C5935%22%2C%22%23A9C413%22%2C%22%232A778D%22%2C%22%23668D1C%22%2C%22%23BEA413%22%2C%22%230C5922%22%2C%22%23743411%22%5D&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_legend=labeled&amp;gco_title=&amp;width=500&amp;height=300">
+						</iframe>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-6'>
+				<div class='well'>
+					<h4>Servizi di noleggio apparecchiature elettromedicali - Totale per farmacia <button id="btn4thFrame" onclick="showHide('btn4thFrame','div4thFrame')">+</button></h4>
+					<div id="div4thFrame" style="DISPLAY: none">
+						<iframe width="500" height="300" scrolling="no" frameborder="no" 
+							src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col191%2C+col231+from+1HHfTCUrYsZPIIOguvWEBkeiZWn4bdp9lHXo7XCrW+order+by+col231+desc+limit+100&amp;viz=GVIZ&amp;t=COLUMN&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_vAxes=%5B%7B%22title%22%3Anull%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%7D&amp;gco_legend=none&amp;gco_title=&amp;width=500&amp;height=300">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class='well'>
+					<h4>Attività oraria settimanale <button id="btn5thFrame" onclick="showHide('btn5thFrame','div5thFrame')">+</button></h4>
+					<div id="div5thFrame" style="DISPLAY: none">
+						<iframe width="500" height="300" scrolling="no" frameborder="no" src="heatmap_attivita_oraria_settimanale.html">
+						</iframe>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-6'>
+				<div class='well'>
+					<h4>Servizi di noleggio apparecchiature elettromedicali <button id="btn6thFrame" onclick="showHide('btn6thFrame','div6thFrame')">+</button></h4>
+					<div id="div6thFrame" style="DISPLAY: none">
+						<iframe width="500" height="300" scrolling="no" frameborder="no" src="heatmap_noleggio.html">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-6'>
+				<div class='well'>
+					<h4>Servizio Check-Up <button id="btn7thFrame" onclick="showHide('btn7thFrame','div7thFrame')">+</button></h4>
+					<div id="div7thFrame" style="DISPLAY: none">
+						<iframe width="500" height="300" scrolling="no" frameborder="no" src="heatmap_checkup.html">
+						</iframe>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-6'>
+				<div class='well'>
+					<h4>Servizi Parafarmacia <button id="btn8thFrame" onclick="showHide('btn8thFrame','div8thFrame')">+</button></h4>
+					<div id="div8thFrame" style="DISPLAY: none">
+						<iframe width="500" height="300" scrolling="no" frameborder="no" src="heatmap_parafarmacia.html">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p align="center">
+			<input type="button" value="Ottieni dati in formato JSON" onclick="window.open('https://script.google.com/macros/s/AKfycbzlzneHKJxzr1eAhPbM9xxR3NTlOHzk4FiPRkNdCafscTb9b5ce/exec')" />
+	    </p>
+	  
+    </div>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.address.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places&v=3.14"></script>
+    <script type="text/javascript" src="js/jquery.geocomplete.min.js"></script>
+    <script type="text/javascript" src="js/maps_lib.js"></script>
+	
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(window).resize(function () {
+          var h = $(window).height(),
+            offsetTop = 105; // Calculate the top offset
+        
+          $('#map_canvas').css('height', (h - offsetTop));
+        }).resize();
+        
+      //]]>
+    </script>
+  </body>
+</html>
